@@ -1,0 +1,42 @@
+<html>
+<title>
+Under Construction	
+</title>	
+<body>
+<h1>Here crash your browser with this while I build my site</h1>
+
+<script src="parrallel.js"> </script>
+<style type="text/css">
+	.block{
+		height: 20px;
+		width: 20px;
+		background-color: red;
+		left: 400px;
+		top: 300px;
+		position:absolute;
+		border-radius: 5px; 
+	}
+	.box{
+		left: 0px;
+		top: 0px;
+		width: 820px;
+		height: 620px;
+		border: 1px solid black;
+		position: absolute;
+	}
+	</style>
+
+<div id="box" class="box">
+</div>
+<div style="top:5px; left:825px; position:absolute;">
+	<button onclick="spawnWorkers()">Start Workers</button> 
+	<p id="Counter">Workers: 0</p>
+	RED <span id="valRed">8</span>
+	<input type="range" name="rRed" min="1" max="8" value="8" oninput="changeRed(this.value)" onchange="changeRed(this.value)"><br>
+	GREEN <span id="valGreen">6</span>
+	<input type="range" name="rGreen" min="1" max="6" value="6" oninput="changeGreen(this.value)" onchange="changeGreen(this.value)"><br>
+	BLUE <span id="valBlue">16</span>
+	<input type="range" name="rBlue" min="1" max="16" value="16" oninput="changeBlue(this.value)" onchange="changeBlue(this.value)"><br>
+</div>
+</body>
+</html>
